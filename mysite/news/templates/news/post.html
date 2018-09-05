@@ -1,0 +1,9 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+
+    <h3 class="text-info">{{ articles.title }}</h3>
+    <small>Posted: {{ articles.date|date:"d-m-Y" }}</small>
+    <p>{{ articles.post|safe|linebreaks }}</p>
+
+{% endblock %}
